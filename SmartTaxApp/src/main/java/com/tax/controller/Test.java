@@ -1,14 +1,18 @@
 package com.tax.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class Test {
 
-	@GetMapping("/getname/{name}")
-	public String getName(@PathVariable String name) {
-		return name;
+	@RequestMapping("/getname")
+	public String getNam() {
+		return "home.jsp";
+	}
+
+	@RequestMapping("/")
+	public String getName() {
+		return "home.jsp";
 	}
 }

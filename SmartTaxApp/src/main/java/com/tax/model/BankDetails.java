@@ -26,7 +26,7 @@ public class BankDetails implements Serializable {
 	@Column
 	private String ifsc;
 	@Column
-	private String websitePassword;
+	private String websitePassword;	//<---IncometaxwebsitePassword--->
 
 	public BankDetails() {
 		super();
